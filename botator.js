@@ -2,11 +2,11 @@ let englishAlphabet = [' ','a', 'b','c','d','e','f','g','h','i','j','k','l','m',
 
 let botAlphabet = [' ','`', '~','!','@','#','$','%','^','&','*','(',')','-','=','_','+','/',',','.','?',';',':','[',']','{','}'];
 
-let userInput = '';k
+let userInput = '';
 
 let translatedOutput = [];
 
-let finalOutput = " ";
+let finalOutput = '';
 
 function toBot(){
     userInput = prompt("Enter the ENGLISH Sentence You want To translate to BOT:");
