@@ -9,7 +9,7 @@ let translatedOutput = [];
 let finalOutput = '';
 
 function toBot(){
-    userInput = prompt("Enter the ENGLISH Sentence You want To translate to BOT:");
+    userInput = prompt("Enter the ENGLISH Sentence You want To translate to BOT language:");
 
     translatedOutput = [];
 
@@ -23,7 +23,7 @@ function toBot(){
 }
 
 function toEnglish(){
-    userInput = prompt("Enter the BOT Sentence You want To translate to ENGLISH:");
+    userInput = prompt("Enter the BOT Language Sentence You want To translate to ENGLISH:");
 
     translatedOutput = [];
 
