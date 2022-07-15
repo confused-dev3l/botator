@@ -6,7 +6,7 @@ let userInput = '';k
 
 let translatedOutput = [];
 
-let finalOutput = '';
+let finalOutput = " ";
 
 function toBot(){
     userInput = prompt("Enter the ENGLISH Sentence You want To translate to BOT:");
