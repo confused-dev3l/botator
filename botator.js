@@ -1,4 +1,4 @@
-let humanAlphabet = [' ','a', 'b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+let englishAlphabet = [' ','a', 'b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 
 let botAlphabet = [' ','`', '~','!','@','#','$','%','^','&','*','(',')','-','=','_','+','/',',','.','?',';',':','[',']','{','}'];
 
@@ -9,33 +9,27 @@ let translatedOutput = [];
 let finalOutput = '';
 
 function toBot(){
-    userInput = prompt("Enter the Sentence:");
+    userInput = prompt("Enter the ENGLISH Sentence You want To translate to BOT:");
 
     translatedOutput = [];
 
     for (let i=0; i <userInput.length; i++){
-        translatedOutput.push(botAlphabet[humanAlphabet.indexOf(userInput[i])]);
-        console.log(userInput[i]);
+        translatedOutput.push(botAlphabet[englishAlphabet.indexOf(userInput[i])]);
     }
-
-    console.log(translatedOutput);
 
     finalOutput = translatedOutput.join('');
 
     document.write(finalOutput);
 }
 
-function toHuman(){
-    userInput = prompt("Enter the Sentence:");
+function toEnglish(){
+    userInput = prompt("Enter the BOT Sentence You want To translate to ENGLISH:");
 
     translatedOutput = [];
 
     for (let i=0; i <userInput.length; i++){
-        translatedOutput.push(humanAlphabet[botAlphabet.indexOf(userInput[i])]);
-        console.log(userInput[i]);
+        translatedOutput.push(englishAlphabet[botAlphabet.indexOf(userInput[i])]);
     }
-
-    console.log(translatedOutput);
 
     finalOutput = translatedOutput.join('');
 
