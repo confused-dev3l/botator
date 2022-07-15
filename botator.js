@@ -2,7 +2,7 @@ let englishAlphabet = [' ','a', 'b','c','d','e','f','g','h','i','j','k','l','m',
 
 let botAlphabet = [' ','`', '~','!','@','#','$','%','^','&','*','(',')','-','=','_','+','/',',','.','?',';',':','[',']','{','}'];
 
-let userInput = '';
+let userInput = '';k
 
 let translatedOutput = [];
 
@@ -19,7 +19,7 @@ function toBot(){
 
     finalOutput = translatedOutput.join('');
 
-    document.write(finalOutput);
+    document.getElementById("translatedText").innerHTML = finalOutput;
 }
 
 function toEnglish(){
@@ -33,5 +33,5 @@ function toEnglish(){
 
     finalOutput = translatedOutput.join('');
 
-    document.write(finalOutput);
+    document.getElementById("translatedText").innerHTML = finalOutput;
 }
