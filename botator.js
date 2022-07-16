@@ -1,6 +1,6 @@
-let englishAlphabet = [' ','a', 'b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+let englishAlphabet = [' ','a', 'b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z', 'A', 'B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z', '0','1','2','3','4','5','6','7','8','9',',', '.','’','”','!','?',':',';','/','=','+','-','%',')','(','*','&','₹','#','@','>','<'];
 
-let botAlphabet = [' ','<', '~','!','@','…','$','%','£','&','*','(',')','-','=','₹','+','/',',','.','?',';',':','[',']','{','}'];
+let botAlphabet = [' ','<', '~','!','@','…','$','%','£','&','*','(',')','-','=','₹','+','/',',','.','?',';',':','[',']','{','}', '<', '~','!','@','…','$','%','£','&','*','(',')','-','=','₹','+','/',',','.','?',';',':','[',']','{','}', '9','8','7','6','5','4','3','2','1','0' ,'a', 'b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v'];
 
 let userInput = '';
 
@@ -9,7 +9,7 @@ let translatedOutput = [];
 let finalOutput = '';
 
 function toBot(){
-    userInput = prompt("Enter the ENGLISH Sentence You want To translate to BOT language:");
+    userInput = document.getElementById("englishInput").value;
 
     translatedOutput = [];
 
@@ -19,11 +19,11 @@ function toBot(){
 
     finalOutput = translatedOutput.join('');
 
-    document.getElementById("translatedText").innerHTML = finalOutput;
+    document.getElementById("botInput").value = finalOutput;
 }
 
 function toEnglish(){
-    userInput = prompt("Enter the BOT Language Sentence You want To translate to ENGLISH:");
+    userInput = document.getElementById("botInput").value;;
 
     translatedOutput = [];
 
@@ -33,5 +33,5 @@ function toEnglish(){
 
     finalOutput = translatedOutput.join('');
 
-    document.getElementById("translatedText").innerHTML = finalOutput;
+    document.getElementById("englishInput").value = finalOutput;
 }

@@ -1,21 +1,20 @@
 <html>
   <head>
     <title>Welcome To Botator</title>
+    <link rel="stylesheet" href="botator.css" type="text/css" media="all" />
   </head>
   <body>
     <script src="botator.js" type="text/javascript" charset="utf-8"></script>
     <h1>SOME INFORMATION:</h1>
     1. Created By u/confused_dev3l<br>
     2. This website is updating continously, since some of the characters are colliding with reddit's markdown.<br>
-    3. Only use LOWER CASE letters to make it work properly. Otherwise, the translations may be broken.<br>
-    4. Numbers, Symbols are cutterntly not supported.<br>
-    5. Sorry for this bad UI. Will try to implement CSS soon.<br>
+    3. Sorry for this bad UI. Will try to implement CSS soon.<br>
     
     <h1>TRANSLATOR:</h1>
-    
-    <input type="button" name="ToBot" id="ToBot" value="Translate To Bot Language" onclick="toBot()"/>
-    <input type="button" name="ToEnglish" id="ToEnglish" value="Translate To English" onclick="toEnglish()"/>
-    
-    <h2 id="translatedText">YOUR TRANSLATION WILL APPEAR HERE</h2>
+    <div class="translationArea">
+      <input name="englishInput" id="englishInput" placeholder="Enter the english text you want to translate to bot" oninput="toBot()">
+      
+      <input name="botInput" id="botInput" placeholder="Enter the bot text you want to translate to english" oninput="toEnglish()">
+    </div>
   </body>
 </html>
