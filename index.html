@@ -14,14 +14,14 @@
     
     <h1>TRANSLATOR:</h1>
     <div class="translationArea">
-      <input name="englishInput" id="englishInput" placeholder="Enter the english text you want to translate to bot" onchange="toBot()">
+      <input name="englishInput" id="englishInput" placeholder="Enter the english text you want to translate to bot" oninput="toBot()">
         
       <input type="button" name="toBot" id="t
       toBot" value="Translate To Bot Language" onclick="toBot()"/>
       
       <input name="botInput" id="botInput" placeholder="Enter the bot text you want to translate to english" onchange="toEnglish()">
         
-      <input type="button" name="toEnglish" id="toEnglish" value="Translate To English" onclick="toEnglish()"/>
+      <input type="button" name="toEnglish" id="toEnglish" value="Translate To English" oninput="toEnglish()"/>
     </div>
   </body>
 </html>
