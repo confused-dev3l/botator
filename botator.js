@@ -35,3 +35,16 @@ function toEnglish(){
 
     document.getElementById("englishInput").value = finalOutput;
 }
+
+function copyText() {
+    
+    let textCopied = document.getElementById("botInput").value;
+    
+    textCopied.select();
+    textCopied.setSelectionRange(0, 99999);
+    
+    navigator.clipboard.writeText(textCopied.value);
+    
+    alert("Copied the text");
+    
+}
