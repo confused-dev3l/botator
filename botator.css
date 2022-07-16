@@ -8,6 +8,10 @@
   width: 400px;
 }
 
-::placeholder {
+#englishInput::placeholder {
+  text-align: left;
+}
+
+#botInput::placeholder {
   text-align: left;
 }
