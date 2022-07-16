@@ -11,8 +11,6 @@ let finalOutput = '';
 function toBot(){
     userInput = document.getElementById("englishInput").value;
 
-    translatedOutput = [];
-
     for (let i=0; i <userInput.length; i++){
         translatedOutput.push(botAlphabet[englishAlphabet.indexOf(userInput[i])]);
     }
@@ -23,9 +21,7 @@ function toBot(){
 }
 
 function toEnglish(){
-    userInput = document.getElementById("botInput").value;;
-
-    translatedOutput = [];
+    userInput = document.getElementById("botInput").value;
 
     for (let i=0; i <userInput.length; i++){
         translatedOutput.push(englishAlphabet[botAlphabet.indexOf(userInput[i])]);
