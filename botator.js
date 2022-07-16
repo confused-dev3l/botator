@@ -23,7 +23,7 @@ function toBot(){
 }
 
 function toEnglish(){
-    userInput = prompt("Enter the BOT Language Sentence You want To translate to ENGLISH:");
+    userInput = document.getElementById("botInput").value;;
 
     translatedOutput = [];
 
