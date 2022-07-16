@@ -7,19 +7,3 @@
   height: 200px;
   width: 400px;
 }
-
-::-webkit-input-placeholder {
-   text-align:top;
-}
-
-:-moz-placeholder { /* Firefox 18- */
-   text-align:top;  
-}
-
-::-moz-placeholder {  /* Firefox 19+ */
-   text-align:top;  
-}
-
-:-ms-input-placeholder {  
-   text-align:top; 
-}
