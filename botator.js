@@ -19,7 +19,7 @@ function toBot(){
 
     finalOutput = translatedOutput.join('');
 
-    document.getElementById("translatedText").innerHTML = finalOutput;
+    document.getElementById("botInput").value = finalOutput;
 }
 
 function toEnglish(){
@@ -33,5 +33,5 @@ function toEnglish(){
 
     finalOutput = translatedOutput.join('');
 
-    document.getElementById("translatedText").innerHTML = finalOutput;
+    document.getElementById("englishInput").value = finalOutput;
 }
