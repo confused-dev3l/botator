@@ -38,7 +38,7 @@ function toEnglish(){
 
 function copyText() {
     
-    let textCopied = document.getElementById("botInput").value;
+    let textCopied = document.getElementById("botInput");
     
     textCopied.select();
     textCopied.setSelectionRange(0, 99999);
