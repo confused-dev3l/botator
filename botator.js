@@ -42,6 +42,8 @@ function copyBotText() {
   let textToCopy = document.querySelector('#botInput')
   textToCopy.select();
   document.execCommand('copy');
+  
+  alert('Text Copied!');
     
     //let textToCopy = document.getElementById("botInput");
     
@@ -59,6 +61,8 @@ function copyEnglishText() {
   let textToCopy = document.querySelector('#englishInput')
   textToCopy.select();
   document.execCommand('copy');
+  
+  alert('Text Copied!');
     
     //let textToCopy = document.getElementById("englishInput");
     
