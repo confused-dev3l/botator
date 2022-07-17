@@ -45,15 +45,6 @@ function copyBotText() {
   
   alert('Text Copied!');
     
-    //let textToCopy = document.getElementById("botInput");
-    
-    //textToCopy.select();
-    //textToCopy.setSelectionRange(0, 99999);
-    
-    //navigator.clipboard.writeText(textToCopy.value);
-    
-    //alert("Copied the text");
-    
 }
 
 function copyEnglishText() {
@@ -63,14 +54,5 @@ function copyEnglishText() {
   document.execCommand('copy');
   
   alert('Text Copied!');
-    
-    //let textToCopy = document.getElementById("englishInput");
-    
-    //textToCopy.select();
-    //textToCopy.setSelectionRange(0, 99999);
-    
-    //navigator.clipboard.writeText(textToCopy.value);
-    
-    //alert("Copied the text");
-    
+  
 }
