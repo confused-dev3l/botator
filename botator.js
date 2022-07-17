@@ -37,8 +37,7 @@ function toEnglish(){
 }
 
 function copyBotText() {
-  
-  //let cb = navigator.clipboard;
+ 
   let textToCopy = document.querySelector('#botInput')
   textToCopy.select();
   document.execCommand('copy');
