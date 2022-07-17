@@ -38,12 +38,12 @@ function toEnglish(){
 
 function copyBotText() {
     
-    let textCopied = document.getElementById("botInput");
+    let textToCopy = document.getElementById("botInput");
     
-    textCopied.select();
-    textCopied.setSelectionRange(0, 99999);
+    textToCopy.select();
+    textToCopy.setSelectionRange(0, 99999);
     
-    navigator.clipboard.writeText(textCopied.value);
+    navigator.clipboard.writeText(textToCopy.value);
     
     alert("Copied the text");
     
@@ -51,12 +51,12 @@ function copyBotText() {
 
 function copyEnglishText() {
     
-    let textCopied = document.getElementById("englishInput");
+    let textToCopy = document.getElementById("englishInput");
     
-    textCopied.select();
-    textCopied.setSelectionRange(0, 99999);
+    textToCopy.select();
+    textToCopy.setSelectionRange(0, 99999);
     
-    navigator.clipboard.writeText(textCopied.value);
+    navigator.clipboard.writeText(textToCopy.value);
     
     alert("Copied the text");
     
