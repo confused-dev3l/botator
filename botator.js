@@ -37,27 +37,21 @@ function toEnglish(){
 }
 
 function copyBotText() {
-    
-    let textCopied = document.getElementById("botInput");
-    
-    textCopied.select();
-    textCopied.setSelectionRange(0, 99999);
-    
-    navigator.clipboard.writeText(textCopied.value);
-    
-    alert("Copied the text");
+ 
+  let textToCopy = document.querySelector('#botInput')
+  textToCopy.select();
+  document.execCommand('copy');
+  
+  alert('Text Copied!');
     
 }
 
 function copyEnglishText() {
-    
-    let textCopied = document.getElementById("englishInput");
-    
-    textCopied.select();
-    textCopied.setSelectionRange(0, 99999);
-    
-    navigator.clipboard.writeText(textCopied.value);
-    
-    alert("Copied the text");
-    
+  
+  let textToCopy = document.querySelector('#englishInput')
+  textToCopy.select();
+  document.execCommand('copy');
+  
+  alert('Text Copied!');
+  
 }
