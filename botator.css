@@ -35,6 +35,7 @@ ul li {
 }
 
 ul li a {
+  display: block;
   text-decoration: none;
   font-stretch: 14px;
   font-family: Arial;
