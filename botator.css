@@ -31,6 +31,7 @@ ul li {
   list-style: none;
   display: inline-block;
   float: left;
+  line-height: 100px;;
 }
 
 ul li a {
@@ -38,4 +39,5 @@ ul li a {
   font-stretch: 14px;
   font-family: Arial;
   color: #1e1e1e;
+  padding: 0 20px;
 }
