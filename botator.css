@@ -19,6 +19,8 @@ ul {
 
 ul li {
   list-style: none;
+  display: inline-block;
+  float: left;
 }
 
 ul li a {
